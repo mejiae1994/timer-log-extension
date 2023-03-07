@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "Timer Log",
+  "description": "Run a timer watch to log time to a notion database",
+  "version": "1.0",
+  "action": {
+    "default_popup": "index.html",
+    "default_icon": {
+      "16": "./resources/icon.png" 
+    }
+  },
+  "permissions": [
+    "storage"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "host_permissions": [
+    "https://api.notion.com/"
+  ]
+}
